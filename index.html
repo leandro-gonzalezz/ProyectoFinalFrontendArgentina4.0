@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="styleshee" href="app.css">
+        <link rel="stylesheet" href="https://colorhunt.co/palette/0c22330654710a91abffc045/?ref=tab">
+        <title>Gonzalez Leandro</title>
+    </head>
+    
+    <body>
+    <!-- SECCION INICIO --> 
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!--ICONOS DEL MENU RESPONSIVE-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Iconos Redes Sociales-->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/leandrogonzalezz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/leandro-gonzalezz" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">BIENVENIDOS</p>
+                <H2>Yo soy <span>Gonzalez Leandro Lucas</span>  Desarrollador Web</H2>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/3.jpg" alt="Foto">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <p>"Soy desarrollador frontend con un año de experiencia en el desarrollo de
+                aplicaciones web. Aunque aún estoy en mis primeras etapas de mi carrera, tengo habilidades sólidas
+                en HTML, CSS y JavaScript. Estoy constantemente mejorando mis habilidades en tecnologías como React
+                y Vue.
+                Tuve la oportunidad de trabajar en proyectos en equipo demostrando ser un colaborador dedicado y
+                eficiente. Estoy emocionado de continuar mi carrera en un entorno de trabajo colaborativo y enfocado
+                en el crecimiento profesional."</p>
+            <a href="#">Descarga mi CV</a>
+        </div>
+
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graficos</li>
+                    <li>SEO</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>HTML & CSS</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="hmtl" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JAVASCRIPT</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTFOLIO-->
+    <!--
+        <section id="portfolio">
+        <h3 class="titulo-seccion">PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlays"></div>
+                <img src="/img/CuboFondo.jpg" alt="Cubo1">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlays"></div>
+                    <img src="/img/CuboFondo.jpg" alt="Cubo1">
+                    <div class="info">
+                        <h4>Descripcion Proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    -->
+
+    <!-- SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame Ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila-mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje ..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO-->
+
+    <footer>
+        <p>Todos los Derechos Reservados - Gonzalez Leandro 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
